@@ -139,7 +139,7 @@ class Tx_JrRemoteAccess_Domain_Model_Customer extends Tx_Extbase_DomainObject_Ab
 	 * @return Tx_Extbase_Persistence_ObjectStorage
 	 */
 	public function getHistories() {
-		return clone $this->histories;
+		return $this->histories;
 	}
 
 	/**

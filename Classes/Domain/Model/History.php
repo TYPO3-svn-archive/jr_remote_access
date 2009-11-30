@@ -9,9 +9,16 @@
 class Tx_JrRemoteAccess_Domain_Model_History extends Tx_Extbase_DomainObject_AbstractEntity {
 
 	/**
+	 * The pid
+	 *
+	 * @var int
+	 */
+	protected $pid;
+
+	/**
 	 * The Access time
 	 *
-	 * @var date
+	 * @var DateTime
 	 */
 	protected $access;
 
@@ -39,9 +46,19 @@ class Tx_JrRemoteAccess_Domain_Model_History extends Tx_Extbase_DomainObject_Abs
 	}
 
 	/**
+	 * Sets the pid
+	 *
+	 * @param int $pid
+	 * @return void
+	 */
+	public function setPid($pid) {
+		$this->pid = $pid;
+	}
+
+	/**
 	 * Sets the access time
 	 *
-	 * @param date $access
+	 * @param datetime $access
 	 * @return void
 	 */
 	public function setAccess(DateTime $access) {
@@ -51,7 +68,7 @@ class Tx_JrRemoteAccess_Domain_Model_History extends Tx_Extbase_DomainObject_Abs
 	/**
 	 * Gets the access time
 	 *
-	 * @return date
+	 * @return datetime
 	 */
 	public function getAccess() {
 		return $this->access;
