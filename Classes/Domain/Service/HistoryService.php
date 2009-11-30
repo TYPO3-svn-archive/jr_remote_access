@@ -19,9 +19,11 @@ class Tx_JrRemoteAccess_Domain_Service_HistoryService {
 	 *
 	 * @param string $username
 	 * @param int $pid
+	 * @param string $extension
+	 * @param string $additionalInfo
 	 * @return void
 	 */
-	public function save($username, $pid) {
+	public function save($username, $pid, $extension, $additionalInfo=NULL) {
 		$customer = $this->customerRepository->findOneByName($username);
 
 		if (isset($customer)) {
@@ -29,6 +31,8 @@ class Tx_JrRemoteAccess_Domain_Service_HistoryService {
 			$history->setPid($pid);
 			$history->setAccess(new DateTime());
 			$history->setIpAddress(t3lib_div::getIndpEnv('REMOTE_ADDR'));
+			$history->setExtension($extension);
+			$history->setAdditionalInfo($additionalInfo);
 			$history->setCustomer($customer);
 			$customer->addHistory($history);
 		}

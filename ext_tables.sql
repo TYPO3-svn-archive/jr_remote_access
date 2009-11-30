@@ -33,6 +33,8 @@ CREATE TABLE tx_jrremoteaccess_domain_model_history (
 	customer int(11) DEFAULT '0' NOT NULL,
 	access int(11) NOT NULL,
 	ip_address varchar(15) DEFAULT '' NOT NULL,
+	extension varchar(32) DEFAULT '' NOT NULL,
+	additional_info mediumtext,
 
 	PRIMARY KEY (uid),
 	KEY parent (pid)

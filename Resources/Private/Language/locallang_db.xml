@@ -13,6 +13,8 @@
 			<label index="tx_jrremoteaccess_domain_model_history">Remote Access History</label>
 			<label index="tx_jrremoteaccess_domain_model_history.access">Access Time</label>
 			<label index="tx_jrremoteaccess_domain_model_history.ip_address">IP Address</label>
+			<label index="tx_jrremoteaccess_domain_model_history.extension">Extension</label>
+			<label index="tx_jrremoteaccess_domain_model_history.additional_info">Additional Information</label>
 		</languageKey>
 	</data>
 </T3locallang>

@@ -37,6 +37,20 @@ class Tx_JrRemoteAccess_Domain_Model_History extends Tx_Extbase_DomainObject_Abs
 	protected $customer;
 
 	/**
+	 * The extension
+	 *
+	 * @var string
+	 */
+	protected $extension;
+
+	/**
+	 * any additional information
+	 *
+	 * @var string
+	 */
+	protected $additionalInfo;
+
+	/**
 	 * Constructs this history
 	 *
 	 * @return
@@ -91,6 +105,44 @@ class Tx_JrRemoteAccess_Domain_Model_History extends Tx_Extbase_DomainObject_Abs
 	 */
 	public function getIpAddress() {
 		return $this->ipAddress;
+	}
+
+	/**
+	 * Sets the extension
+	 *
+	 * @param string $extension
+	 * @return void
+	 */
+	public function setExtension($extension) {
+		$this->extension = $extension;
+	}
+
+	/**
+	 * Gets the extension
+	 *
+	 * @return string
+	 */
+	public function getExtension() {
+		return $this->extension;
+	}
+
+	/**
+	 * Sets the additional information
+	 *
+	 * @param string $additionalInfo
+	 * @return void
+	 */
+	public function setAdditionalInfo($additionalInfo) {
+		$this->additionalInfo = $additionalInfo;
+	}
+
+	/**
+	 * Gets the additional information
+	 *
+	 * @return string
+	 */
+	public function getAdditionalinfo() {
+		return $this->additionalInfo;
 	}
 
 	/**
