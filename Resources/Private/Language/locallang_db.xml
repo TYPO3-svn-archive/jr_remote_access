@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'jr_remote_access'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_jrremoteaccess_domain_model_customer">Remote Customer</label>
+			<label index="tx_jrremoteaccess_domain_model_customer.name">Name</label>
+			<label index="tx_jrremoteaccess_domain_model_customer.description">Description</label>
+			<label index="tx_jrremoteaccess_domain_model_customer.api_key">API Key</label>
+			<label index="tx_jrremoteaccess_domain_model_history">Remote Access History</label>
+			<label index="tx_jrremoteaccess_domain_model_history.access">Access Time</label>
+			<label index="tx_jrremoteaccess_domain_model_history.ip_address">IP Address</label>
+		</languageKey>
+	</data>
+</T3locallang>
